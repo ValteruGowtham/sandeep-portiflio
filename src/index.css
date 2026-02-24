@@ -81,11 +81,16 @@ body {
 /* ===== Layout ===== */
 .section-container {
   width: 100%;
-  padding: 100px 24px;
+  padding: 80px 24px;
   position: relative;
 }
-@media (min-width: 768px) { .section-container { padding: 116px 40px; } }
-@media (min-width: 1024px) { .section-container { padding: 132px 56px; } }
+@media (min-width: 768px) { .section-container { padding: 104px 40px; } }
+@media (min-width: 1024px) { .section-container { padding: 128px 56px; } }
+
+/* Ensure anchored sections are not hidden behind fixed navbar (except hero, which self-offsets) */
+section[id]:not(#about) {
+  scroll-margin-top: 80px;
+}
 
 .content-container {
   max-width: 1080px;

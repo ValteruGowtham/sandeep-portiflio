@@ -20,8 +20,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef}
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    <section
+      id="about"
+      ref={sectionRef}
+      className="min-h-[calc(100vh-68px)] pt-[68px] flex items-center justify-center relative overflow-hidden"
     >
       {/* 3D Background */}
       <div className="absolute inset-0 z-0">
